@@ -10,26 +10,42 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1>Weather Now</h1>
-        <form >
-          <input type="text" id="city" placeholder="Enter a City">
+        <h1>WeatherNow</h1>
+        <form class="searchBar" >
+          <input type="search" id="city" placeholder="Enter a City">
           <button type="submit">Submit</button>
         </form>
 
         <div class = "dropdown" >
-          <button class="dropBtn">°F/°C</button>
+          <button class="dropBtn">Change Units</button>
           
           <div id="dropList" class="dropContent">
-              <button class="farenheit">Farenheit</button>
-              <button class ="celcius">Celcius</button>
+              <button class="US">US</button>
+              <button class ="Metric">Metric</button>
           </div>
         </div>
       </div>
 
-      <div class="mainContent">
-        
+      <div class="mainContent"> 
+        <h2 class="city">No Current Conditions to Display</h2>
+        <h3 class="currentconditions">please enter a city for current weather conditions...</h3>
+        <div class="temp"></div>
+        <img src="icons/default.svg" alt="weather icon" class="icon default">
+        <div>
+          <div class="hi"></div>
+          <div class="low"></div>
+        </div>
       </div>
       <div class="secondaryContent">
+        <div class="feelslike"></div>
+        <div class="humidity"></div>
+        <div class="precipprob"></div>
+        <div class="wind"></div>
+        <div class="pressure"></div>
+        <div class="uvindex"></div>
+        <div class="sunrise"></div>
+        <div class="sunset"></div>
+        <div class="moonphase"></div>
       
       </div>
     </div>
