@@ -2,10 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" {mode: 'cors' , }/>
     <title>Weather Now</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Weather Now</h1>
+        <form >
+          <input type="text" id="city" placeholder="Enter a City">
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class = "dropdown" >
+          <button class="dropBtn">°F/°C</button>
+          
+          <div id="dropList" class="dropContent">
+              <button class="farenheit">Farenheit</button>
+              <button class ="celcius">Celcius</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainContent">
+        
+      </div>
+      <div class="secondaryContent">
+      
+      </div>
+    </div>
+    
+  </body>
 </html>

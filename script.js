@@ -38,3 +38,26 @@ function processData (weatherData) {
     
 } 
 getWeatherData('knoxville')
+
+
+
+function handleDegreeDropdown() {
+    const dropBtn = document.querySelector(".dropBtn");
+    dropBtn.addEventListener("click", function() {
+        document.getElementById("dropList").classList.toggle("show");
+    });
+
+    window.onclick = function(event) {
+        if(!event.target.matches('.dropBtn')) {
+            let dropdowns = document.getElementsByClassName("dropContent");
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+                let openDropdown = dropdowns[i];
+                if(openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+}
+handleDegreeDropdown();
