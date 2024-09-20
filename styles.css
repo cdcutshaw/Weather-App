@@ -1,11 +1,18 @@
 * {
   box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  
 }
+body {
+  font-size: 100%;
+  
+}
+
 
 .container {
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: 1fr 4fr 2fr;
+  grid-template-rows: 1fr 5fr 3fr;
   height: 100vh;
 }
 
@@ -13,8 +20,43 @@
   background-color: rgb(10, 45, 92);
 }
 
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  align-items:  center;
+}
+
+
 .mainContent {
-  background-color:azure;
+  background-color:snow;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items:  center;
+}
+
+.mainContent > * {
+  margin: 10px;
+}
+
+.secondaryContent {
+  color: snow;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: start;
+}
+
+.secondaryContent > * {
+  margin: 0px 100px ;
+}
+
+h1 {
+  color: snow;
+  font-size: 1.3em ;
   
 }
 
@@ -23,46 +65,7 @@
   height: 200px;
 }
 
-dropdown styling
-.dropBtn {
-  background-color:silver;
-  padding: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-}
-
-.dropBtn:hover, .dropBtn:focus {
-  background-color: rgb(146, 146, 146);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropContent {
-  visibility: hidden;
-  opacity: 0; 
-  position:absolute;
-  background-color:silver;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropContent button {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropContent a:hover {
-  background-color: rgb(146, 146, 146);
-}
-
-.show {
-  visibility: visible;
-  opacity: 1;
+.dropdown label {
+  color: snow;
+  font-weight: 600;
 }
